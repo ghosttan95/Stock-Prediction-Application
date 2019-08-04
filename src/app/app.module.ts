@@ -3,16 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { GeneralStockComponent } from './general-stock/general-stock.component';
+import { PredictionService } from './prediction.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GeneralStockComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [PredictionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
